@@ -1,8 +1,4 @@
 bot/.vscode/*
 controller/.vscode/*
-bot/obj/Debug/project.razor.json
-bot/obj/Debug/bot-cleaned.csproj.CoreCompileInputs.cache
-bot/obj/Debug/bot-cleaned.csprojResolveAssemblyReference.cache
-controller/obj/Debug/project.razor.json
-controller/obj/Debug/controller-cleaned.csproj.CoreCompileInputs.cache
-controller/obj/Debug/controller-cleaned.csprojResolveAssemblyReference.cache
+bot/obj/*
+controller/obj/*
