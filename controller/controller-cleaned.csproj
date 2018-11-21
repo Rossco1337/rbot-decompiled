@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <!--Project was exported from assembly: /home/ross/bot_deob/controller-cleaned.exe-->
+  <!--Project was exported from assembly: C:\Users\rossc\Desktop\bot_class\controller-cleaned.exe-->
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{14B5CBF9-ABB9-4BB6-8C1D-74F563982737}</ProjectGuid>
+    <ProjectGuid>{E231621E-AD88-476E-8278-27D925102000}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AssemblyName>controller</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>

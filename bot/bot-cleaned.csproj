@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <!--Project was exported from assembly: /home/ross/bot_deob/bot-cleaned.exe-->
+  <!--Project was exported from assembly: C:\Users\rossc\Desktop\bot_class\bot-cleaned.exe-->
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{15F2E894-85D0-41C5-9241-494A1B4A6282}</ProjectGuid>
+    <ProjectGuid>{0E3662A6-4479-40FD-B1C6-215F131B71E7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AssemblyName>bot</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
