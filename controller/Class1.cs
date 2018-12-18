@@ -99,7 +99,7 @@ namespace ns0
               "闅責諃鏆蛊蒩駊",
               "\xF8B2\xEDB0\xF4B3\xF2BA\xEBCC캊첓톚죨"
             };
-            string[] strArray4 = new string[3]
+            string[] deobTakedownCodes = new string[3]
             {
               "뗋곃\xAACA돝ꛔ\xA4CC맖ꃣ뺝ꞎ몔룐귆득닗ꯛ躮賠醶裣蛤\x9FF7苶肭藶鳽髿菐電银觭邾渎眒樃栁純損戝笝縓簐愲砙瘍漉爇瀺唡䰩䨥匶䘩䐁奰䀴帶䜮娨堰䴾吺刖䭬\x2E4Bⱉㅂ⠈♘㽋≍ ╁㱝㨗⍗㙓㑚⥇う\x0E71\x1775\x0A79ࠥᵮѥȯ᭯ṻᱶŧᡬ᙮ཧሲၹ\xF597\xEC9F\xEA92\xF395\xE685\xE4C9鍊\xE096ﺒ\xE788\xFADA\xF886\xED81\xF497\xF29E\xEB98캺철퇶좭욣�싢샣얦��쎶횣풪즫킢꺃럇\xAAC5\xA8CB붚꓁ꋙ믝뻖벑ꇁ룖뛒꿆닀냒闿責諴鏽蛮蓽馾胮黪蟄骺飧路铰鋶诺渁氓焆案明缛戋怛攐簙稄捄瘓琔椏瀞乣圾䨣䠤崷䐫䈫孼帽尸䄫堹嘵伱制偽㕆\x2C5F⩉㍝♇\x244E㥟 㹀❋㩙㡔ⵞ㑀\x325E⬌\x0E6Bౢᅿ\x087Eٹώɱ-դᱳᨷͨᙷᑰॠၵ\xEE87\xF7D0\xEA8E\xE880ﶎ\xE491\xE28Dﮕﺌﲅ\xE195\xF891\xF69F\xEFC8\xF297\xF095햆첡쪲편욖쒰�삲�잢��춤풻튗쮵껜곓뇓\xA8CAꛏ뿍ꋍꃁꗡ볒뫒ꏁ뛂듊꧁냗軭韱談裪鷾蓥苬鯳黨鳰至飢雮近鋷郱甂氜樆猑昈搀礮恒縋朔稛砑浄琀爊欃丷䰳儤䠭䘩弽䈮䀦䔡尩娟䌰嘣吷䤡倳\x2E4C㝳⩇⡊㵙␊≊㭌㹖㱈\x2154㡊㙞⽊\x325Cげᕻ\x0C7E੦ፙ٣ѭᥱcḢܮᨩᠵ\x0D64ᑻቶ\x0B7F\xEE9C\xEC84\xF1A0\xE8C8\xE699ﾝ\xE28E\xE081\xE58Dﲎ廙\xE38A\xF699\xF4BA\xE99A\xF09F캁힍쫠좞�쒰슮\xDBB2\xDEBF�송�횶쾧튂탳뗁곘\xAAD4돑ꛓꓘ맛ꃒ뺓\xA7D0뫏룞귅듛닓ꮌ軫賬釷裦蚫\x9FF6苫胬藯鳳髳莤雺铸解郢渌眞橊栈紕搖戉筜縊簄愉硘瘖漍爚瀉啲䰢䨢匱䘴䐪夭䁠帼䜴婺堦䴧吱别䬿\x2E57ⱒㄖ⡛☌㽖≛\x2069│㱎㩘⍂㘖㑍⥂ぅ\x0E60\x1779੬\x0863ᵳѠȯ᭯ḹᱥůᠸᙴཻሲေ\xF597\xEC98\xEA86\xF399\xE68F\xE49D聯\xE087ﺖ\xE78C\xFADA\xF89E\xED85\xF49B\xF293\xEBCC캽첵톥좭욾�슧삿엢��쎫횾풍짮탾껆럓\xAAC3꣓뷈꓁ꋜ뮜뻭볿ꇢ뢘뛈꾏닜냄闖責諨鏠蚦蓺駪胳黶蟵髫飰跸钴鋹诣湎氒焄栍昉缕戗怃敂簙稁挍瘅琊椏瀝乣圷䨤䠬崾䐪䈪嬯幾尢䄯塸噷伻刳倯㕗ⱁ⩆㍗☆⑆㥛⁄㹚❖㨚㡙ⵅ㑗㉐⭘\x0E61\x0C73ᅦࠨٿώɬ\x007Fէᱨ͍᩹ᘶᑽॠၱ\xEEC3\xF783\xEA98\xE880ﶎ\xE491\xE280ﮎﻞﲘ\xE1A0\xF8D5\xF692\xEFBF\xF2D2\xF098햿첣쪯폴욣쒢�사�잳��춣풢튺쮨꺎곇뇙ꢈꛛ뿍ꊂꃈꗆ볝뫚ꎄ뚚듍꧋냞軷響諨袥鷿蓬苛鯬黱鳾臨飫隵辦銼郤甗氇橇猑昄摉礇态縞杀穔硛浄瑔爓欍丣䰨儸䠩䙫弶䈭䀤䔶尽娴䌭嘰吰䤼倷\x2E4C㝝⩙⡋㵛\x2456≛㬜㹍㱅⅃㡟㙉⽇\x3254〝ᕠ౩ੱ\x1371٨Щᥰiṥݬ᩻ᡖ\x0D73ᑦቭ୩\xEE8C\xEC8F\xF197\xE89A\xE6A8ﾓ\xE297\xE0C3\xE58Dﲟ龎\xE387\xF694\xF49B\xE983\xF09F캠\xD7FE쪯좩�쒴슮\xDBAF\xDEA9�솴�훻쾱튿킯뗓게꫞동Ꚉꒇ릐ꃍ뻞\xA7CD뫗룘귋듖닞ꯏ軧賵釣裪蛪鿒苧胥藶鳲髸菨雳铔觺郿渀眙樘栕紛搋戃笙縓",
               "\x2471㥽\x206C㸃❋㩮㡇ⵅ㑤㉳⭊\x0E60\x0C53ᅗ\x0860ظὬɲ@Ձ᱅ᩧ͖ᘢᑭैၕ\xEE90\xF7B2\xEA84\xE883\xFD91\xE4D0\xE2DAﮛﺴﲇ\xE183\xF891\xF6AC\xEFDB\xF2B6\xF0C4햗체쫳펳욖쒇�삯�쟶��춏풛튖쯻께곶뇺꣢ꛢ뾈ꋓꃚꗨ볳뫕ꏢ뛷득ꧏ냁躴韵諯袷鷂蓧苶鯾黜鳣臕颠雡辸銹郫畄汔樬猣昷搞礱怃縢朮稞砲浜球片欈丬䰂儠䠏䘇弟䈱䁺䔬尔娟䌐噽呮䤊倄\x2E5B㝒⨟⠒㵶⑃≹㭒㹓㱇⅄㠏㘔⽂㉶いᕜ\x0C78੨\x137Bؿрᤩ8ṽݰᨵᡘെᐢቮ\x0B4A\xEED9\xEC8D\xF1B0\xE891\xE6B3ￗ\xE293\xE0DF\xE5CDﲲ揄\xE390\xF69B\xF48C\xE99E\xF09A캶힛쪽좭�쒖신\xDB8C\xDE9A�쇶�회쾛튷키뗵곊ꫭ돰ꛫꓮ맔ꂙ뻊Ꞑ뫯룿귏뒁니ꮟ軫賲醯製蛼\x9FF5苃背藧鳖髃菒雦铏觺郦湌眜樬栖紗搌戭笐繎簝愯砷瘕漥牅瀜唞䰠䩳匷䘐䐣夐䀍幧䜐娏堢䴍吧刑䬼\x2E43ⱔㅒ⠛☜㼁≰\x2065╚㱒㨄⍥㙷㑸⤖だแᝑਜ਼ࡄᵛѬɣ᭘ṑ᱖Ūᠨᙉསችၰ\xF59F\xEC85\xEA94\xF386\xE683\xE4B9戀\xE081ﺔ\xE78E歹\xF8B9\xED87\xF491\xF29A\xEB9F캼첤토좧욧�슣삫얶��쎶횰풼즾킱껑럷\xAAC5\xA8C9뷖\xA4CDꋝ믝뻓볐ꇲ뢖뚕꾆닂냘闷賠諴鏦蛣蓧駻胧麱螮髨飰跡铵鋲讬渋氓焗栟昇缙戏恍攇簐稞挆瘙琔楎瀜丢圳䨣䠵崣䐰䉯嬹帶尥䅦堷嘯佨刷倳㕓ⱀ⩗㌔♒⑇㥛⁒㹖❆㩜㡜ⵎ㐔\x325E⬌\x0E60౮ᄶ\x086F٥άɶlհᱹᩧͫᘶᑼॼၱ\xEEC3\xF795\xEA86\xE887ﶓ\xE490\xE28Eﮌﺓﲞ\xE1A5\xF88C\xF694\xEFA6\xF2D2\xF099햼첥쪯펱욤쓩�삵�잲��춯풼튋쯮꺎겛뇒ꣁꛊ뿋ꊂꂁꗖ볉뫘ꏏ뛙듖ꧢ낐軷韱說裱鷩蓽苣鯽黰鳰膦飡雯迡鋠部甑氉樔獔昇摉祒怎縖朄稔砜洦瑔爆欁丫䰳儳䠂䙫彶䈣䀿䔧尸娹䌥嘁呹䤷倾⹂㝀⩇⡊㵙␄≖㭈㹗㱃\x2153㡛㙞⽛㈒すᕻ౭ੴጴتѱ\x197Blṣݭ᩵ᡶപᑱቭୣ\xEE83\xECC1\xF191\xE886\xE682ﾌ\xE296\xE088\xE585ﳜ搜\xE388\xF69F\xF49D\xE98F\xF095캷힣쫪좶�쓤슼\xDBB9\xDEB0�솮�횯쾺튳킰뗁게\xAAD3돕Ꚇ\xA4CD맛ꃍ뻚\xA7C1몚룐귘듕니ꯀ軯賬醶裭蛧\x9FF1苠胢藏鲼骹菠雿铸觽邰渗眙橊桉紎搅戊笚縛簕慆砗瘏潈爀瀘唶䰾䨦匼䙦䐽夷䁠帶䜫娻堸䵪吻别䭬\x2E4Bⱅㅙ⡋☋㽝≐⁂╁㰜㩄⍐㙟㐙⥀さ\x0E77ᝤ\x0A63\x0877ᵭѡɽᬼṧᱽŲᡶᙾཫቷၯ\xF5D2\xEC88\xEA86\xF39C\xE6C6\xE49D聯\xE0C0ﺗ\xE78E望\xF89D\xED8F\xF496\xF2DF\xEB9F캫첷톳좡욣�슰삨얠��쏤횳풱즚탰꺍럞\xAACFꣀ뷉ꒄꋋ믝뻖벑ꇒ룑뚛꿌닗냉闳賯諮鏠蛵蓠駶胰黼蟳骺飡跹铻鋲讬渋氉焂案昘缙戕恍敎簙稛挆瘟琍椏瀀丮圿䨉䠱崵䐊䉯嬸帻尽䄪堹嘸佨剾倮㕇ⱞ⩎㍂☆\x244C㥖⁔㸓❄㩓㡔ⵙ㐔\x324B⭙\x0E61౪ᅹ\x0867هἸɯ\x007Fիᱺᨷͽᙢᑰॼၥ\xEE80\xF795\xEA99\xE8C5ﶟ\xE488\xE286ﮞﺑﲼ\xE1C6\xF8D6\xF690\xEF84\xF287\xF09F헲첢쪮폴욵쒽�삫�잩��춾풺튺쮺껋겁뇏\xA8DDꛉ뾘ꋆꃃꗃ벜뫚ꏅ뛆듊ꦎ냔軭韵諹袥鷵蓰芯鯯黪鳴臵飼雵迩鋺邽甁氉樔猁晆搝礟怈縇杀稟砇洋球爓欍丣䱡儾䠼䘢弯䉢䀩䔧尨娴䌡",
@@ -129,8 +129,8 @@ namespace ns0
             }
             else if (deobGivenCommand.StartsWith("ቱ୭\xEE9D\xEC94\xF199\xE880\xE69F\xFFD8"))
             {
-              int index = deobController.deobRandomNumber(0, strArray4.Length);
-              string string_4 = strArray4[index];
+              int index = deobController.deobRandomNumber(0, deobTakedownCodes.Length);
+              string string_4 = deobTakedownCodes[index];
               this.deobWriteLine(streamWriter, string_4);
             }
             else if (deobGivenCommand.StartsWith("琉椂瀽丩圣䨁䠂"))
